@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const UserSchema = new mongoose.Schema({
     username: {
@@ -15,16 +15,16 @@ const UserSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    email: {
+    profilePic: {
         type: String,
-        default: ""
+        defaut: ""
     },
     isAdmin: {
         type: Boolean,
         default: false
-    }
+    },
 }, {
     timestamps: true
 });
 
-module.export = mongoose.model("User", UserSchema);
+module.exports = mongoose.model("User", UserSchema);

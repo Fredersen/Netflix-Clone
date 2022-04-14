@@ -19,4 +19,4 @@ const ListSchema = new mongoose.Schema({
     timestamps: true
 });
 
-module.export = mongoose.model("List", ListSchema);
+module.exports = mongoose.model("List", ListSchema);
